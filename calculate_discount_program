@@ -1,0 +1,21 @@
+
+
+def calculate_discount(price, discount_percentage):
+
+    if discount_percentage >= 20:
+
+        discount = price * (discount_percentage / 100)
+
+        return price - discount  # Return the discounted price
+    
+    else:
+        
+        return price  # Return the original price if discount is less than 20%
+
+price = int(input("Enter the original price: "))
+discount_perc = int(input("Enter discount percentage: "))
+
+result = calculate_discount(price, discount_perc)
+print("Your price is: " + str(result))
+
+
